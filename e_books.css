@@ -1,0 +1,208 @@
+
+body{
+    margin: 0;
+    background-color: white;
+}
+*{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+header{
+    background-color: #d7b7b7f0;
+    margin: 0;
+    height: fit-content;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.header_left a{
+    color: black;
+    text-decoration: none;
+}
+.header_left{
+    display: flex;
+    justify-content: space-around;
+}
+.header_left h1{
+    font-size: 25px;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+.header_left h1 img{
+    width: 33px;
+    height: 33px;
+}
+header ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    margin-top: 30px;
+}
+header .link{
+    margin-left: 25px;
+}
+header .left_a li a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    color: black;
+}
+.header_right{
+    display: flex;
+}
+.header_right .searsh_box{
+       height: 50px;
+       width: 300px;
+       background-color: transparent;
+       margin: auto;
+       position: relative;
+}
+.searsh_box input{
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      outline: none;
+      padding-left: 10px;
+      background-color: transparent;
+      border: none;
+      border-bottom: #000000 2px solid;
+      font-size: 18px;
+}
+.searsh_box .icon{
+    position: absolute;
+    left: 90%;
+    top: 10px;
+    cursor: pointer;
+}
+.header_right a{
+    color: black;
+    height: fit-content;
+    text-decoration: none;
+    padding-bottom: 10px;
+    font-size: 20px;
+    margin: 30px 30px 0 30px;
+}
+.header_right a:hover{
+    border-bottom: 2px black solid;
+}
+.header_left .left_a .link a:hover{
+    border-bottom: 2px black solid;
+} 
+.sous{
+    display: none;
+    box-shadow: 0 1px 2px #CCC;
+    background-color: white;
+    position: absolute;
+    top: 50px;
+    width: fit-content;
+    z-index: 1000;
+    border-radius: 30px;
+}
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 9px;
+    position: relative;
+    right: 10px;
+}
+.header_left > ul li:hover .sous{
+    display: block;
+}
+.sous li a{
+    border-bottom: none;
+    margin-left: 0;
+    border-bottom: none;
+    text-align: left;
+}
+.sous li a:hover{
+    border-bottom: none;
+    color: #d7b7b7f0;
+}
+                              /*sidebar*/
+main{
+    display: flex;
+}                              
+aside{
+    width: 30%;
+    border: 1px solid #d8d8d8;
+}
+aside h2{
+    color: #878585;
+    text-align: center;
+    font-size: 1.6em;
+    margin: 10px;
+}
+.imgh{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.imgh p img{
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    border: 1px solid #CCC;
+    padding: 5px;
+    text-align: left;
+    float: left;
+    margin: 15px 10px 5px 2px;
+    position: relative;
+    bottom: 10px;
+}
+.imgh p span{
+    color: #9a9999;
+    margin-left: 10px;
+    float: right;
+}
+.imgh p{
+    font-family: "Merriweather", "Georgia", serif;
+    font-size: 14px;
+    padding: 0px 5px 10px 0px;
+    line-height: 24px;
+    position: relative;
+    top: 10px;
+    border-bottom: #d8d8d8 1px solid;
+}
+                                                /*main right*/
+.books{
+    width: 70%;
+    font-family: "Merriweather", "Georgia", serif;
+}
+.books h1{
+    color: #878585;
+    text-align: center;
+    font-size: 1.4em;
+    padding: 10px;
+}
+.bo1:hover{
+    box-shadow: 0 0 10px rgb(133, 133, 133);
+}
+.bo1{
+    margin: 10px;
+    width: 200px;
+    height: fit-content;
+    padding: 10px;
+}
+.bo1 img{
+    width: 180px;
+    height: 240px;
+}
+.bo1 p{
+    font-size: 0.7em;
+}
+.bo1 span{
+    display: block;
+    color: #6b6969;
+    font-weight: bold;
+    padding: 5px;
+    position: relative;
+    bottom: 10px;
+}
+.bo1 button{
+    width: 100%;
+    background-color: #e1c6c6f0;
+    border: none;
+    padding: 3px;
+    cursor: pointer;
+}

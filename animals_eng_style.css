@@ -1,0 +1,167 @@
+body{
+    margin: 0;
+    background-color: white;
+}
+*{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+header{
+    background-color:  rgba(1, 1, 192, 0.931);
+    margin: 0;
+    height: fit-content;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.header_left a{
+    color: black;
+    text-decoration: none;
+}
+.header_left a:hover{
+    color: black;
+    text-decoration: none;
+}
+.header_left{
+    display: flex;
+    justify-content: space-around;
+}
+.header_left h1{
+    font-size: 25px;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+.header_left h1 img{
+    width: 33px;
+    height: 33px;
+}
+header ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    margin-top: 30px;
+}
+header .link{
+    margin-left: 25px;
+}
+header .left_a li a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    color: black;
+}
+.header_right{
+    display: flex;
+}
+.header_right .searsh_box{
+       height: 50px;
+       width: 300px;
+       background-color: transparent;
+       margin: auto;
+       position: relative;
+}
+.searsh_box input{
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      outline: none;
+      padding-left: 10px;
+      background-color: transparent;
+      border: none;
+      border-bottom: #000000 2px solid;
+      font-size: 18px;
+}
+.searsh_box .icon{
+    position: absolute;
+    left: 90%;
+    top: 10px;
+    cursor: pointer;
+}
+.header_right a{
+    color: black;
+    height: fit-content;
+    text-decoration: none;
+    padding-bottom: 10px;
+    font-size: 20px;
+    margin: 30px 30px 0 30px;
+}
+.header_right a:hover{
+    border-bottom: 2px black solid;
+}
+.header_left .left_a .link a:hover{
+    border-bottom: 2px black solid;
+} 
+.sous{
+    display: none;
+    box-shadow: 0 1px 2px #CCC;
+    background-color: white;
+    position: absolute;
+    top: 50px;
+    width: fit-content;
+    z-index: 1000;
+    border-radius: 30px;
+}
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 9px;
+    position: relative;
+    right: 10px;
+}
+.header_left > ul li:hover .sous{
+    display: block;
+}
+.sous li a{
+    border-bottom: none;
+    margin-left: 0;
+    border-bottom: none;
+    text-align: left;
+}
+.sous li a:hover{
+    border-bottom: none;
+    color: #405bd3;
+}
+                                     /*animals*/              
+h1{
+    font-size: 1.5em;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.324);
+}
+h1::first-letter{
+    color: rgba(218, 0, 0, 0.849);
+}
+.animal_tb{
+    margin-top: 20px;
+}
+.animal_tb ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+.animal_tb ul li img{
+    width: 150px;
+    height: 100px;
+}
+.animal_tb ul li span{
+    font-weight: bold;
+    font-size: 1.3em;
+    padding: 10px;
+    position: relative;
+    right: 50%;
+    top: 20px;
+}
+.animal_tb ul li{
+    margin-top: 25px;
+}
+.koala{
+    position: relative;
+    left: 25px;
+}
+iframe{
+    width: 700px;
+    margin: 50px 20px;
+    height: 350px;
+    position: relative;
+    left: 20%;
+}

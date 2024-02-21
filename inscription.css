@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+    background-image: linear-gradient(100deg,#405bd3,rgb(75, 1, 148));
+    height: 100vh;
+    overflow: hidden;
+}
+.container{
+    box-shadow: 0 0 25px #e9f4fb ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 700px;
+    width: 650px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+.container h1 a{
+    font-size: 26px;
+    display: block;
+    color: #405bd3;
+    text-shadow: 0 0 1.5px rgb(75, 1, 148);
+    text-decoration: none;
+    padding-bottom: 10px;
+    width: 100%;
+    border-bottom: silver 1px solid;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.input_box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+.input_box:nth-child(2n){
+    justify-content: end;
+}
+.input_box label , .gender-title{
+    width: 95%;
+    color: #405bd3;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 5px 0;
+}
+.gender-title{
+    font-size: 16px;
+}
+.input_box input{
+    height: 40px;
+    width: 90%;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid silver;
+    outline: none;
+}
+.input_box input:is(:focus,:valid){
+    box-shadow: 0 0 10px #405bd3;
+}
+.gender_categorie label{
+     padding: 0 20px 0 5px;
+     font-size: 14px;
+}
+.gender_categorie{
+    color: rgb(119, 119, 119);
+}
+.gender_categorie label, .gender_categorie input{
+    cursor: pointer;
+} 
+.button_r{
+    margin: 15px 0;
+}
+.button_r button{
+    width: 100%;
+    padding: 8px;
+    display: block;
+    font-size: 16px;
+    border: #fff solid 2px;
+    color: #fff;
+    background-image: linear-gradient(-100deg,#405bd3,rgb(75, 1, 148));
+    border-radius: 100px 0px;
+    cursor: pointer;
+    transition: 5s;
+}
+.button_r button:hover{
+    background-image: linear-gradient(100deg,#405bd3,rgb(75, 1, 148));
+}
+@media(max-width:700px){
+    .container{
+        min-width: 280px;
+    }
+    .content{
+        max-height: 380px;
+        overflow: auto;
+    }
+    .input_box{
+        margin-bottom: 12px;
+        width: 100%;
+    }
+    .input_box:nth-child(2n){
+        justify-content: space-between;
+    }
+    .gender_categorie{
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+    }
+    .content::-webkit-scrollbar{
+        width: 0;
+    }
+}
